@@ -1,4 +1,6 @@
 (executable
+ (modes byte exe)
  (name client)
  (libraries cohttp-lwt-unix api_cohttp_lwt api index)
- (preprocess (pps lwt_ppx)))
+ (preprocess
+  (pps lwt_ppx)))

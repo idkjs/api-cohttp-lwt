@@ -1,3 +1,4 @@
 (executable
+ (modes byte exe)
  (name server)
  (libraries cohttp-lwt-unix api-cohttp-lwt-server mock))

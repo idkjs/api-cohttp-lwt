@@ -1,4 +1,6 @@
 (executable
+ (modes byte exe)
  (name client)
  (libraries js_of_ocaml-lwt api_cohttp_lwt api ojt ocplib-json-typed-browser)
- (preprocess (pps lwt_ppx js_of_ocaml-ppx)))
+ (preprocess
+  (pps lwt_ppx js_of_ocaml-ppx)))

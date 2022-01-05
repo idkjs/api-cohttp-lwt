@@ -2,4 +2,5 @@
  (name api_cohttp_lwt_mock)
  (public_name api-cohttp-lwt-mock)
  (libraries cohttp-lwt routes)
- (preprocess (pps lwt_ppx)))
+ (preprocess
+  (pps lwt_ppx)))
