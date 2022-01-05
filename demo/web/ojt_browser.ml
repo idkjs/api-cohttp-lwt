@@ -1,4 +1,4 @@
-include Api.Client.Make (Cohttp_lwt_xhr.Client) (struct
+include Api.Client.Make (Cohttp_lwt_jsoo.Client) (struct
   let name = "ocplib-json-typed-browser"
 
   let list_of_json js =

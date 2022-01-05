@@ -6,8 +6,8 @@ module Make (Client : Cohttp_lwt.S.Client) (Proxy : P) = struct
   open Proxy
 
   type ctx = Client.ctx
-  let default_ctx = Client.default_ctx
-  let sexp_of_ctx = Client.sexp_of_ctx
+  let default_ctx = Client.callv
+  (* let sexp_of_ctx = Client.sexp_of_ctx *)
 
   let call ?ctx ?headers ?body ?chunked meth uri =
     Client.call ?ctx ?headers ?body ?chunked meth (proxy uri)

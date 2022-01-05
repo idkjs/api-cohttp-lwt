@@ -4,3 +4,6 @@
  (libraries cohttp-lwt routes)
  (preprocess
   (pps lwt_ppx)))
+(env
+ (dev
+  (flags (:standard -w -27-32))))

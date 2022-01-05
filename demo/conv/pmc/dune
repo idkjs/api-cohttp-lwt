@@ -1,5 +1,10 @@
 (library
  (name pmc)
- (libraries api ppx_meta_conv.runtime ppx_meta_conv.tiny_json)
+ (libraries api ppx_meta_conv.runtime ppx_meta_conv.tiny_json )
  (preprocess
   (pps ppx_meta_conv.ppx)))
+
+(env
+ (dev
+  (flags
+   (:standard -w -27-32))))

@@ -1,4 +1,4 @@
-include Proxy.Make (Cohttp_lwt_xhr.Client) (struct
+include Proxy.Make (Cohttp_lwt_jsoo.Client) (struct
   let proxy uri =
     (* FIXME beware of redirections? *)
     (* TODO Uri.pct_encode? *)

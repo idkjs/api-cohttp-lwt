@@ -1,4 +1,9 @@
 (library
  (name api_cohttp_lwt)
  (public_name api-cohttp-lwt)
- (libraries xml-light yojson ppx_deriving_yojson.runtime lwt cohttp-lwt-jsoo))
+ (libraries xml-light yojson ppx_deriving_yojson.runtime lwt cohttp-lwt-jsoo cohttp-lwt))
+
+(env
+ (dev
+  (flags
+   (:standard -w -27-32))))
